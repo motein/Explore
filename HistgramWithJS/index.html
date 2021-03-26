@@ -1,0 +1,46 @@
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</head>
+
+<body>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script>
+        var x1 = [];
+        var x2 = [];
+        for (var i = 0; i < 500; i ++) {
+	        x1[i] = Math.random();
+	        x2[i] = Math.random();
+        }
+
+        var trace1 = {
+            x: x1,
+            type: "histogram",
+            name: "Real Data",
+            histnorm: 'probability',
+            marker: {
+                color: 'rgba(0,0,0,0.2)',
+             },
+        };
+        var trace2 = {
+            x: x2,
+            type: "histogram",
+            name: "Golden Data",
+            histnorm: 'probability',
+            marker: {
+                color: 'rgb(255, 99, 132)',
+             },
+        };
+        var data = [trace1, trace2];
+        <!--
+        var layout = {barmode: "stack"};
+        //-->
+        var layout = {
+          barmode: "stack", 
+          title: "Distribution Histogram", 
+          xaxis: {title: "Value"}, 
+          yaxis: {title: "Probability"}
+        };
+        Plotly.newPlot('myDiv', data, layout);
+    </script>
+</body>
