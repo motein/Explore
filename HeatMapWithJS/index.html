@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic JavaScript Heat Map Chart</title>
+    <script src="js/anychart-core.min.js"></script>
+    <script src="js/anychart-heatmap.min.js"></script>
+    <script src="js/my.js"></script>
+    <style>
+      html, body, #container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      anychart.onDocumentReady(function () {
+        
+        // create the chart and set the data
+        var data = getData();
+        chart = anychart.heatMap(data);
+        
+        // set the chart title
+        chart.title("Human Development Index by region (2010-2018)");
+        
+        // create and configure the color scale.
+        //var customColorScale = anychart.scales.linearColor();
+        //customColorScale.colors(["#ACE8D4", "#00726A"]);
+
+		
+		var customColorScale = anychart.scales.ordinalColor();
+		customColorScale.ranges([
+		  { less: 0.549 },
+		  { from: 0.550, to: 0.699 },
+		  { from: 0.700, to: 0.799 },
+		  { greater: 0.800 }
+		]);
+		customColorScale.colors(["#CF7A78", "#E69645", "#69A231", "#4D7623"]);
+        
+        // set the color scale as the color scale of the chart
+        chart.colorScale(customColorScale);
+		
+		chart.legend(true);
+        
+        // set the container id
+        chart.container("container");
+        
+        // initiate drawing the chart
+        chart.draw();
+        
+      });
+    </script>
+  </body>
+</html>
