@@ -1,0 +1,35 @@
+<head>
+	<!-- Load plotly.js into the DOM -->
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+</head>
+
+<body>
+	<div id='myDiv'><!-- Plotly chart will be drawn inside this DIV --></div>
+	<script>
+        var trace1 = {
+          x: [1, 2, 3, 4],
+          y: [10, 15, 13, 17],
+          mode: 'lines+markers',
+          name: 'Lines',
+          marker: {
+            color: 'rgba(0,0,0,0.2)',
+            size: 8
+          },
+          line: {
+            color: 'rgb(255, 99, 132)',
+            width: 1
+          }
+        };
+
+        var data = [trace1];
+        
+        var layout = {
+            title: 'Correlation',
+            xaxis: {title: "Time"}, 
+            yaxis: {title: "Value"},
+            showlegend: true
+        };
+
+        Plotly.newPlot('myDiv', data, layout);
+    </script>
+</body>
