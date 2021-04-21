@@ -1,0 +1,95 @@
+
+Diagnosis software begin.
+Mon Mar 15 13:18:47 JST 2021
+
+  PASS:  (100) Testhead Selftest
+
+  PASS:  (110) Reference Configuration Check
+
+  PASS:  (120) Relay Test
+
+  PASS:  (121) HF Matrix Relay Test
+
+  PASS:  (130) GNDU Test
+
+  PASS:  (131) SMU V/I Test
+
+  PASS:  (132) DC Leakage Test
+
+  PASS:  (140) CMU C/G Test
+
+  PASS:  (141) CMU DC Bias Test
+
+  PASS:  (150) DVM Test
+
+  PASS:  (160) PG Selftest
+
+  PASS:  (161) PG Connection Test
+
+
+Diagnosis software end.
+Mon Mar 15 13:29:19 JST 2021
+
+
+Performance Verification software begin.
+Mon Mar 15 13:35:24 JST 2021
+
+  PASS:  (221) Measurement Pin Location Test
+
+Performance Verification software end.
+Mon Mar 15 13:36:58 JST 2021
+
+
+Performance Verification software begin.
+Mon Mar 15 13:41:18 JST 2021
+
+  PASS:  (224) HF Matrix Relay Test
+
+Performance Verification software end.
+Mon Mar 15 13:43:23 JST 2021
+
+
+Diagnosis software begin.
+Tue Mar 16 17:44:32 JST 2021
+
+Testhead selftest failed at CMU.
+error code: 34603009
+
+Testhead selftest failed at CMU.
+error code: 34603010
+
+Testhead selftest failed at CMU.
+error code: 34668545
+
+Testhead selftest failed at CMU.
+error code: 34668546
+
+Testhead selftest failed at CMU.
+error code: 34668547
+
+Testhead selftest failed at CMU.
+error code: 34668548
+
+Testhead selftest failed at CMU.
+error code: 34668549
+
+Testhead selftest failed at CMU.
+error code: 34668550
+
+Testhead selftest failed at CMU.
+error code: 34668551
+
+**FAIL:  (100) Testhead Selftest
+
+  PASS:  (110) Reference Configuration Check
+
+  PASS:  (120) Relay Test
+
+  PASS:  (121) HF Matrix Relay Test
+
+  PASS:  (130) GNDU Test
+
+
+Diagnosis software terminated.
+Tue Mar 16 17:49:39 JST 2021
+

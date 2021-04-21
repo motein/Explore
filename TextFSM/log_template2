@@ -1,0 +1,10 @@
+Value Filldown StartTime (.+ ..:..:.. .+)
+Value Required Status (PASS|FAIL)
+Value Code (\(\d+\))
+Value Info (.+)
+Value Filldown EndTime (.+ ..:..:.. .+)
+
+Start
+  ^${StartTime} -> Continue
+  ^[\s\*]{2}${Status}: \s+${Code}\s+${Info} -> Record
+  ^${EndTime} -> Continue

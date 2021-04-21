@@ -1,0 +1,6 @@
+Value Status (PASS|FAIL)
+Value Code (\(\d+\))
+Value Info (.+)
+
+Start
+  ^[\s\*]{2}${Status}: \s+${Code}\s+${Info} -> Record

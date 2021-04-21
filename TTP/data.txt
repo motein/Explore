@@ -1,0 +1,8 @@
+Connection   : 5.5.5.5
+Protocol     : IKEv2 IPsec
+Login Time   : 01:01:01 CDT Sun Sep 27 2020
+Duration     : 1d 00h:01m:s
+Connection   : 7.7.7.7
+Protocol     : IKEv2
+Login Time   : 00:00:00 CDT Thu Sep 26 2020
+Duration     : 2d 8h:31m:08s

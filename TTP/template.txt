@@ -1,0 +1,4 @@
+Connection   : {{remote_ip}}
+Protocol     : {{protocol | _line_}}
+Login Time   : {{logintime | _line_}}
+Duration     : {{duration | _line_}}
